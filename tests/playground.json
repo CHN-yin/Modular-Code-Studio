@@ -1,0 +1,9 @@
+{
+  "preferredVersions": { "php": "8.3", "wp": "6.9" },
+  "steps": [
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; wp_mkdir_p(WPMU_PLUGIN_DIR); copy('/mnt/mcs-tests/fixture.php', WPMU_PLUGIN_DIR . '/mcs-fixture.php'); update_option('permalink_structure', '/%postname%/'); flush_rewrite_rules(false); $user = get_user_by('login', 'admin'); wp_set_password('mcs-local-fixture-admin', $user->ID);"
+    }
+  ]
+}

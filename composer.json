@@ -1,0 +1,16 @@
+{
+  "name": "mcs/modular-code-studio",
+  "description": "Gutenberg page code modules and asset bundling.",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "php": ">=8.1",
+    "mck89/peast": "^1.17",
+    "wikimedia/css-sanitizer": "^5.4"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "platform": { "php": "8.1.0" },
+    "sort-packages": true
+  }
+}

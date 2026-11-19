@@ -1,0 +1,89 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mcs/code-module",
+  "title": "Modular Code Module",
+  "category": "mcs-studio",
+  "icon": "editor-code",
+  "description": "Edit independent HTML, CSS and JavaScript for this page.",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "shortcode"
+  ],
+  "textdomain": "modular-code-studio",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "moduleName": {
+      "type": "string",
+      "default": ""
+    },
+    "html": {
+      "type": "string",
+      "default": ""
+    },
+    "css": {
+      "type": "string",
+      "default": ""
+    },
+    "js": {
+      "type": "string",
+      "default": ""
+    },
+    "enableHtml": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableCss": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableJs": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableShortcode": {
+      "type": "boolean",
+      "default": true
+    },
+    "enablePreview": {
+      "type": "boolean",
+      "default": true
+    },
+    "wrapper": {
+      "type": "boolean",
+      "default": false
+    },
+    "dependencies": {
+      "type": "string",
+      "default": ""
+    },
+    "rootSelector": {
+      "type": "string",
+      "default": ""
+    },
+    "instanceId": {
+      "type": "string",
+      "default": ""
+    },
+    "sourceId": {
+      "type": "string",
+      "default": ""
+    },
+    "signature": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "className": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}
